@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/buscador-sedes-funerarias-coomeva.html" }
+  ]
+}
