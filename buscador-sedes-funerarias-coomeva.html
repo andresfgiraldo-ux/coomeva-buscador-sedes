@@ -517,7 +517,7 @@ M4276 1231 c-16 -17 -17 -38 -12 -203 3 -101 9 -196 15 -210 13 -35 47 -45 72
     <div class="chat-icono">⚘</div>
     <div class="chat-titulo">
       <b>Asistente Auxilio Funerario</b>
-      <span>Te ayudo a encontrar la sede más cercana</span>
+      <span>Te ayudo a encontrar tu sede</span>
     </div>
     <button class="chat-cerrar" onclick="toggleChat()" aria-label="Cerrar chat">✕</button>
   </div>
@@ -557,7 +557,7 @@ function msgUsuario(texto){
 }
 function iniciarChat(){
   const ciudades=[...new Set(SEDES.filter(s=>s.activa).map(s=>s.ciudad))].sort().slice(0,5);
-  msgBot('Hola 👋 ¿En qué ciudad necesitas una funeraria aliada?', ciudades);
+  msgBot('Hola 👋 Lamento que estés pasando por este momento; estoy aquí para ayudarte rápido. Puedo encontrar la sede funeraria del beneficio más cercana a ti. ¿Cómo prefieres buscar?', ciudades);
 }
 function enviarChat(){
   const inp=document.getElementById('chat-input');
